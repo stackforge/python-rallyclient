@@ -10,11 +10,11 @@
 #    License for the specific language governing permissions and limitations
 #    under the License.
 
-
+from rallyclient.v1 import deployment_shell
 from rallyclient import utils
 
 
-COMMAND_MODULES = []
+COMMAND_MODULES = [deployment_shell]
 
 
 def enhance_parser(parser, subparsers, cmd_mapper):
